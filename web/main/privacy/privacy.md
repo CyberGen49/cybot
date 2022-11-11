@@ -12,6 +12,8 @@ The **/shortlink** command and its subcommands allow the user to create short li
 * The timestamp of creation
 * The URL
 * The short link ending that will redirect visitors to the target URL
+* A value that will increment every time the short link is clicked
+* The title of the target webpage, if a title exists
 * A value determining whether or not the short link is disabled (described below)
 
 For security purposes, a short link can neither be edited nor deleted after creation. If the user wishes to prevent access to a short link, they can use the **/shortlink disable** command to disable it. Disabled short links won't allow visitors to access the link's target URL, and will instead notify them that the link has been disabled.
