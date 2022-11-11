@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybot Privacy Policy</title>
+    <link rel="icon" href="../icon-circle.png">
+    <meta name="theme-color" content="#f2e6a6">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Cybot">
+    <meta property="og:title" content="Privacy Policy">
+    <link rel="stylesheet" href="https://src.simplecyber.org/base.css">
+    <script defer src="https://src.simplecyber.org/base.js"></script>
+    <script defer src="https://src.simplecyber.org/marked.min.js"></script>
+</head>
+<body class="changeColours" style="--fgHue: 50">
+    <div id="main" class="container">
+        Loading...
+    </div>
+    <script>
+        window.addEventListener('load', async() => {
+            const markdown = await (await fetch('./privacy.md')).text();
+            _id('main').innerHTML = marked.parse(markdown);
+        });
+    </script>
+</body>
+</html>

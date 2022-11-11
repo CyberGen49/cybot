@@ -1,0 +1,14 @@
+{
+    "token": "",
+    "client_id": "",
+    "owner_id": "",
+    "port": 8530,
+    "web_domain": "",
+    "shortener_port": 8531,
+    "shortener_domain": "",
+    "invite_url": "",
+    "rapidapi_key": "",
+    "safe_browsing_key": "",
+    "gcloud_key": "",
+    "exchangerates_key": ""
+}

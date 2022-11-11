@@ -1,0 +1,1237 @@
+{
+    "area": {
+        "name": "Area",
+        "units": {
+            "squareMeters": {
+                "name": "Square meters",
+                "toBase": "x"
+            },
+            "squareFeet": {
+                "name": "Square feet",
+                "toBase": "x/10.764"
+            },
+            "squareKilometers": {
+                "name": "Square kilometers",
+                "toBase": "x*1e6"
+            },
+            "squareMiles": {
+                "name": "Square miles",
+                "toBase": "squareKilometers*2.59"
+            },
+            "squareAcres": {
+                "name": "Acres",
+                "toBase": "squareMiles/640"
+            },
+            "earthSurfaceArea": {
+                "name": "Earth surface areas",
+                "toBase": "squareMiles*196900000"
+            }
+        }
+    },
+    "length": {
+        "name": "Length",
+        "units": {
+            "nanometers": {
+                "name": "Nanometers",
+                "toBase": "x/1e7"
+            },
+            "micrometers": {
+                "name": "Micrometers",
+                "toBase": "x/10000"
+            },
+            "millimeters": {
+                "name": "Millimeters",
+                "toBase": "x/10"
+            },
+            "centimeters": {
+                "name": "Centimeters",
+                "toBase": "x"
+            },
+            "meters": {
+                "name": "Meters",
+                "toBase": "x*100"
+            },
+            "kilometers": {
+                "name": "Kilometers",
+                "toBase": "x*1000"
+            },
+            "inches": {
+                "name": "Inches",
+                "toBase": "x*2.54"
+            },
+            "feet": {
+                "name": "Feet",
+                "toBase": "inches*12"
+            },
+            "yards": {
+                "name": "Yards",
+                "toBase": "feet*3"
+            },
+            "miles": {
+                "name": "Miles",
+                "toBase": "feet*5280"
+            },
+            "earthCircumference": {
+                "name": "Earth circumferences",
+                "toBase": "miles*24901"
+            },
+            "earthToMoon": {
+                "name": "Earth-to-moon lengths",
+                "toBase": "miles*238900"
+            },
+            "lightYear": {
+                "name": "Light years",
+                "toBase": "meters*9.461e+15"
+            },
+            "observableUniverse": {
+                "name": "Observable universes",
+                "toBase": "lightYear*93016000000"
+            }
+        }
+    },
+    "mass": {
+        "name": "Mass",
+        "units": {
+            "micrograms": {
+                "name": "Micrograms",
+                "toBase": "milligrams/1000"
+            },
+            "milligrams": {
+                "name": "Milligrams",
+                "toBase": "grams/1000"
+            },
+            "grams": {
+                "name": "Grams",
+                "toBase": "x/1000"
+            },
+            "kilograms": {
+                "name": "Kilograms",
+                "toBase": "x"
+            },
+            "metricTons": {
+                "name": "Metric tons",
+                "toBase": "x*1000"
+            },
+            "ounces": {
+                "name": "Ounces",
+                "toBase": "pounds/16"
+            },
+            "pounds": {
+                "name": "Pounds",
+                "toBase": "x/2.205"
+            },
+            "usTons": {
+                "name": "United States tons",
+                "toBase": "pounds*2000"
+            }
+        }
+    },
+    "volume": {
+        "name": "Volume",
+        "units": {}
+    },
+    "speed": {
+        "name": "Speed",
+        "units": {
+            "metersPerSecond": {
+                "name": "Meters per second",
+                "toBase": "x"
+            },
+            "kilometersPerHour": {
+                "name": "Kilometers per hour",
+                "toBase": "x/3.6"
+            },
+            "feetPerSecond": {
+                "name": "Feet per second",
+                "toBase": "x/3.28084"
+            },
+            "milesPerHour": {
+                "name": "Miles per hour",
+                "toBase": "x/2.237"
+            },
+            "knots": {
+                "name": "Knots",
+                "toBase": "kilometersPerHour*1.852"
+            },
+            "mach": {
+                "name": "Mach",
+                "toBase": "x*343",
+                "beforeValue": true
+            },
+            "speedsOfLight": {
+                "name": "Speeds of light",
+                "toBase": "x*299792458"
+            }
+        }
+    },
+    "frequency": {
+        "name": "Frequency",
+        "units": {}
+    },
+    "energy": {
+        "name": "Energy",
+        "units": {}
+    },
+    "currency": {
+        "name": "Currency",
+        "units": {
+            "aed": {
+                "name": "United Arab Emirates Dirham (AED)",
+                "toBase": "x/3.67301",
+                "saveCase": true
+            },
+            "afn": {
+                "name": "Afghan Afghani (AFN)",
+                "toBase": "x/87.2504",
+                "saveCase": true
+            },
+            "all": {
+                "name": "Albanian Lek (ALL)",
+                "toBase": "x/119.971313",
+                "saveCase": true
+            },
+            "amd": {
+                "name": "Armenian Dram (AMD)",
+                "toBase": "x/404.89753",
+                "saveCase": true
+            },
+            "ang": {
+                "name": "Netherlands Antillean Guilder (ANG)",
+                "toBase": "x/1.780564",
+                "saveCase": true
+            },
+            "aoa": {
+                "name": "Angolan Kwanza (AOA)",
+                "toBase": "x/432.86645",
+                "saveCase": true
+            },
+            "ars": {
+                "name": "Argentine Peso (ARS)",
+                "toBase": "x/146.87253",
+                "saveCase": true
+            },
+            "aud": {
+                "name": "Australian Dollar (AUD)",
+                "toBase": "x/1.545213",
+                "saveCase": true
+            },
+            "awg": {
+                "name": "Aruban Florin (AWG)",
+                "toBase": "x/1.8",
+                "saveCase": true
+            },
+            "azn": {
+                "name": "Azerbaijani Manat (AZN)",
+                "toBase": "x/1.704567",
+                "saveCase": true
+            },
+            "bam": {
+                "name": "Bosnia-Herzegovina Convertible Mark (BAM)",
+                "toBase": "x/2.018317",
+                "saveCase": true
+            },
+            "bbd": {
+                "name": "Barbadian Dollar (BBD)",
+                "toBase": "x/1.994861",
+                "saveCase": true
+            },
+            "bdt": {
+                "name": "Bangladeshi Taka (BDT)",
+                "toBase": "x/101.296644",
+                "saveCase": true
+            },
+            "bgn": {
+                "name": "Bulgarian Lev (BGN)",
+                "toBase": "x/2.023039",
+                "saveCase": true
+            },
+            "bhd": {
+                "name": "Bahraini Dinar (BHD)",
+                "toBase": "x/0.376971",
+                "saveCase": true
+            },
+            "bif": {
+                "name": "Burundian Franc (BIF)",
+                "toBase": "x/2040.751672",
+                "saveCase": true
+            },
+            "bmd": {
+                "name": "Bermudan Dollar (BMD)",
+                "toBase": "x/1",
+                "saveCase": true
+            },
+            "bnd": {
+                "name": "Brunei Dollar (BND)",
+                "toBase": "x/1.428815",
+                "saveCase": true
+            },
+            "bob": {
+                "name": "Bolivian Boliviano (BOB)",
+                "toBase": "x/6.827099",
+                "saveCase": true
+            },
+            "brl": {
+                "name": "Brazilian Real (BRL)",
+                "toBase": "x/5.376401",
+                "saveCase": true
+            },
+            "bsd": {
+                "name": "Bahamian Dollar (BSD)",
+                "toBase": "x/0.987963",
+                "saveCase": true
+            },
+            "btc": {
+                "name": "Bitcoin (BTC)",
+                "toBase": "x/0.000051408132",
+                "saveCase": true
+            },
+            "btn": {
+                "name": "Bhutanese Ngultrum (BTN)",
+                "toBase": "x/80.941941",
+                "saveCase": true
+            },
+            "bwp": {
+                "name": "Botswanan Pula (BWP)",
+                "toBase": "x/13.244105",
+                "saveCase": true
+            },
+            "byn": {
+                "name": "New Belarusian Ruble (BYN)",
+                "toBase": "x/2.494299",
+                "saveCase": true
+            },
+            "byr": {
+                "name": "Belarusian Ruble (BYR)",
+                "toBase": "x/19600",
+                "saveCase": true
+            },
+            "bzd": {
+                "name": "Belize Dollar (BZD)",
+                "toBase": "x/1.991559",
+                "saveCase": true
+            },
+            "cad": {
+                "name": "Canadian Dollar (CAD)",
+                "toBase": "x/1.36951",
+                "saveCase": true
+            },
+            "cdf": {
+                "name": "Congolese Franc (CDF)",
+                "toBase": "x/2047.999828",
+                "saveCase": true
+            },
+            "chf": {
+                "name": "Swiss Franc (CHF)",
+                "toBase": "x/0.980794",
+                "saveCase": true
+            },
+            "clf": {
+                "name": "Chilean Unit of Account (UF) (CLF)",
+                "toBase": "x/0.034666",
+                "saveCase": true
+            },
+            "clp": {
+                "name": "Chilean Peso (CLP)",
+                "toBase": "x/956.530443",
+                "saveCase": true
+            },
+            "cny": {
+                "name": "Chinese Yuan (CNY)",
+                "toBase": "x/7.154596",
+                "saveCase": true
+            },
+            "cop": {
+                "name": "Colombian Peso (COP)",
+                "toBase": "x/4490.01",
+                "saveCase": true
+            },
+            "crc": {
+                "name": "Costa Rican Colón (CRC)",
+                "toBase": "x/625.705588",
+                "saveCase": true
+            },
+            "cuc": {
+                "name": "Cuban Convertible Peso (CUC)",
+                "toBase": "x/1",
+                "saveCase": true
+            },
+            "cup": {
+                "name": "Cuban Peso (CUP)",
+                "toBase": "x/26.5",
+                "saveCase": true
+            },
+            "cve": {
+                "name": "Cape Verdean Escudo (CVE)",
+                "toBase": "x/113.786698",
+                "saveCase": true
+            },
+            "czk": {
+                "name": "Czech Republic Koruna (CZK)",
+                "toBase": "x/25.4666",
+                "saveCase": true
+            },
+            "djf": {
+                "name": "Djiboutian Franc (DJF)",
+                "toBase": "x/175.891194",
+                "saveCase": true
+            },
+            "dkk": {
+                "name": "Danish Krone (DKK)",
+                "toBase": "x/7.671605",
+                "saveCase": true
+            },
+            "dop": {
+                "name": "Dominican Peso (DOP)",
+                "toBase": "x/52.655694",
+                "saveCase": true
+            },
+            "dzd": {
+                "name": "Algerian Dinar (DZD)",
+                "toBase": "x/142.362366",
+                "saveCase": true
+            },
+            "egp": {
+                "name": "Egyptian Pound (EGP)",
+                "toBase": "x/19.513051",
+                "saveCase": true
+            },
+            "ern": {
+                "name": "Eritrean Nakfa (ERN)",
+                "toBase": "x/15",
+                "saveCase": true
+            },
+            "etb": {
+                "name": "Ethiopian Birr (ETB)",
+                "toBase": "x/52.202489",
+                "saveCase": true
+            },
+            "eur": {
+                "name": "Euro (EUR)",
+                "toBase": "x/1.031665",
+                "saveCase": true
+            },
+            "fjd": {
+                "name": "Fijian Dollar (FJD)",
+                "toBase": "x/2.30955",
+                "saveCase": true
+            },
+            "fkp": {
+                "name": "Falkland Islands Pound (FKP)",
+                "toBase": "x/0.864596",
+                "saveCase": true
+            },
+            "gbp": {
+                "name": "British Pound Sterling (GBP)",
+                "toBase": "x/0.92032",
+                "saveCase": true
+            },
+            "gel": {
+                "name": "Georgian Lari (GEL)",
+                "toBase": "x/2.830034",
+                "saveCase": true
+            },
+            "ggp": {
+                "name": "Guernsey Pound (GGP)",
+                "toBase": "x/0.864596",
+                "saveCase": true
+            },
+            "ghs": {
+                "name": "Ghanaian Cedi (GHS)",
+                "toBase": "x/10.225997",
+                "saveCase": true
+            },
+            "gip": {
+                "name": "Gibraltar Pound (GIP)",
+                "toBase": "x/0.864596",
+                "saveCase": true
+            },
+            "gmd": {
+                "name": "Gambian Dalasi (GMD)",
+                "toBase": "x/55.370216",
+                "saveCase": true
+            },
+            "gnf": {
+                "name": "Guinean Franc (GNF)",
+                "toBase": "x/8538.878283",
+                "saveCase": true
+            },
+            "gtq": {
+                "name": "Guatemalan Quetzal (GTQ)",
+                "toBase": "x/7.752358",
+                "saveCase": true
+            },
+            "gyd": {
+                "name": "Guyanaese Dollar (GYD)",
+                "toBase": "x/206.709733",
+                "saveCase": true
+            },
+            "hkd": {
+                "name": "Hong Kong Dollar (HKD)",
+                "toBase": "x/7.85005",
+                "saveCase": true
+            },
+            "hnl": {
+                "name": "Honduran Lempira (HNL)",
+                "toBase": "x/24.394246",
+                "saveCase": true
+            },
+            "hrk": {
+                "name": "Croatian Kuna (HRK)",
+                "toBase": "x/7.767898",
+                "saveCase": true
+            },
+            "htg": {
+                "name": "Haitian Gourde (HTG)",
+                "toBase": "x/120.050775",
+                "saveCase": true
+            },
+            "huf": {
+                "name": "Hungarian Forint (HUF)",
+                "toBase": "x/430.759738",
+                "saveCase": true
+            },
+            "idr": {
+                "name": "Indonesian Rupiah (IDR)",
+                "toBase": "x/15198.9",
+                "saveCase": true
+            },
+            "ils": {
+                "name": "Israeli New Sheqel (ILS)",
+                "toBase": "x/3.53526",
+                "saveCase": true
+            },
+            "imp": {
+                "name": "Manx pound (IMP)",
+                "toBase": "x/0.864596",
+                "saveCase": true
+            },
+            "inr": {
+                "name": "Indian Rupee (INR)",
+                "toBase": "x/81.853503",
+                "saveCase": true
+            },
+            "iqd": {
+                "name": "Iraqi Dinar (IQD)",
+                "toBase": "x/1442.020536",
+                "saveCase": true
+            },
+            "irr": {
+                "name": "Iranian Rial (IRR)",
+                "toBase": "x/42350.000068",
+                "saveCase": true
+            },
+            "isk": {
+                "name": "Icelandic Króna (ISK)",
+                "toBase": "x/144.549765",
+                "saveCase": true
+            },
+            "jep": {
+                "name": "Jersey Pound (JEP)",
+                "toBase": "x/0.864596",
+                "saveCase": true
+            },
+            "jmd": {
+                "name": "Jamaican Dollar (JMD)",
+                "toBase": "x/149.913576",
+                "saveCase": true
+            },
+            "jod": {
+                "name": "Jordanian Dinar (JOD)",
+                "toBase": "x/0.70897",
+                "saveCase": true
+            },
+            "jpy": {
+                "name": "Japanese Yen (JPY)",
+                "toBase": "x/144.711503",
+                "saveCase": true
+            },
+            "kes": {
+                "name": "Kenyan Shilling (KES)",
+                "toBase": "x/120.704793",
+                "saveCase": true
+            },
+            "kgs": {
+                "name": "Kyrgystani Som (KGS)",
+                "toBase": "x/80.2669",
+                "saveCase": true
+            },
+            "khr": {
+                "name": "Cambodian Riel (KHR)",
+                "toBase": "x/4070.836644",
+                "saveCase": true
+            },
+            "kmf": {
+                "name": "Comorian Franc (KMF)",
+                "toBase": "x/509.802528",
+                "saveCase": true
+            },
+            "kpw": {
+                "name": "North Korean Won (KPW)",
+                "toBase": "x/900.000045",
+                "saveCase": true
+            },
+            "krw": {
+                "name": "South Korean Won (KRW)",
+                "toBase": "x/1431.190109",
+                "saveCase": true
+            },
+            "kwd": {
+                "name": "Kuwaiti Dinar (KWD)",
+                "toBase": "x/0.310339",
+                "saveCase": true
+            },
+            "kyd": {
+                "name": "Cayman Islands Dollar (KYD)",
+                "toBase": "x/0.823281",
+                "saveCase": true
+            },
+            "kzt": {
+                "name": "Kazakhstani Tenge (KZT)",
+                "toBase": "x/471.430783",
+                "saveCase": true
+            },
+            "lak": {
+                "name": "Laotian Kip (LAK)",
+                "toBase": "x/16315.979568",
+                "saveCase": true
+            },
+            "lbp": {
+                "name": "Lebanese Pound (LBP)",
+                "toBase": "x/1493.834167",
+                "saveCase": true
+            },
+            "lkr": {
+                "name": "Sri Lankan Rupee (LKR)",
+                "toBase": "x/359.635416",
+                "saveCase": true
+            },
+            "lrd": {
+                "name": "Liberian Dollar (LRD)",
+                "toBase": "x/153.52499",
+                "saveCase": true
+            },
+            "lsl": {
+                "name": "Lesotho Loti (LSL)",
+                "toBase": "x/17.830094",
+                "saveCase": true
+            },
+            "ltl": {
+                "name": "Lithuanian Litas (LTL)",
+                "toBase": "x/2.95274",
+                "saveCase": true
+            },
+            "lvl": {
+                "name": "Latvian Lats (LVL)",
+                "toBase": "x/0.60489",
+                "saveCase": true
+            },
+            "lyd": {
+                "name": "Libyan Dinar (LYD)",
+                "toBase": "x/4.986559",
+                "saveCase": true
+            },
+            "mad": {
+                "name": "Moroccan Dirham (MAD)",
+                "toBase": "x/10.952995",
+                "saveCase": true
+            },
+            "mdl": {
+                "name": "Moldovan Leu (MDL)",
+                "toBase": "x/19.315618",
+                "saveCase": true
+            },
+            "mga": {
+                "name": "Malagasy Ariary (MGA)",
+                "toBase": "x/4189.789232",
+                "saveCase": true
+            },
+            "mkd": {
+                "name": "Macedonian Denar (MKD)",
+                "toBase": "x/63.541908",
+                "saveCase": true
+            },
+            "mmk": {
+                "name": "Myanma Kyat (MMK)",
+                "toBase": "x/2074.786727",
+                "saveCase": true
+            },
+            "mnt": {
+                "name": "Mongolian Tugrik (MNT)",
+                "toBase": "x/3224.442056",
+                "saveCase": true
+            },
+            "mop": {
+                "name": "Macanese Pataca (MOP)",
+                "toBase": "x/7.988339",
+                "saveCase": true
+            },
+            "mro": {
+                "name": "Mauritanian Ouguiya (MRO)",
+                "toBase": "x/356.999828",
+                "saveCase": true
+            },
+            "mur": {
+                "name": "Mauritian Rupee (MUR)",
+                "toBase": "x/45.147821",
+                "saveCase": true
+            },
+            "mvr": {
+                "name": "Maldivian Rufiyaa (MVR)",
+                "toBase": "x/15.45027",
+                "saveCase": true
+            },
+            "mwk": {
+                "name": "Malawian Kwacha (MWK)",
+                "toBase": "x/1014.101076",
+                "saveCase": true
+            },
+            "mxn": {
+                "name": "Mexican Peso (MXN)",
+                "toBase": "x/20.16441",
+                "saveCase": true
+            },
+            "myr": {
+                "name": "Malaysian Ringgit (MYR)",
+                "toBase": "x/4.647503",
+                "saveCase": true
+            },
+            "mzn": {
+                "name": "Mozambican Metical (MZN)",
+                "toBase": "x/63.829984",
+                "saveCase": true
+            },
+            "nad": {
+                "name": "Namibian Dollar (NAD)",
+                "toBase": "x/17.820071",
+                "saveCase": true
+            },
+            "ngn": {
+                "name": "Nigerian Naira (NGN)",
+                "toBase": "x/431.330182",
+                "saveCase": true
+            },
+            "nio": {
+                "name": "Nicaraguan Córdoba (NIO)",
+                "toBase": "x/35.509004",
+                "saveCase": true
+            },
+            "nok": {
+                "name": "Norwegian Krone (NOK)",
+                "toBase": "x/10.78601",
+                "saveCase": true
+            },
+            "npr": {
+                "name": "Nepalese Rupee (NPR)",
+                "toBase": "x/129.480419",
+                "saveCase": true
+            },
+            "nzd": {
+                "name": "New Zealand Dollar (NZD)",
+                "toBase": "x/1.75754",
+                "saveCase": true
+            },
+            "omr": {
+                "name": "Omani Rial (OMR)",
+                "toBase": "x/0.385042",
+                "saveCase": true
+            },
+            "pab": {
+                "name": "Panamanian Balboa (PAB)",
+                "toBase": "x/0.987978",
+                "saveCase": true
+            },
+            "pen": {
+                "name": "Peruvian Nuevo Sol (PEN)",
+                "toBase": "x/3.902109",
+                "saveCase": true
+            },
+            "pgk": {
+                "name": "Papua New Guinean Kina (PGK)",
+                "toBase": "x/3.481348",
+                "saveCase": true
+            },
+            "php": {
+                "name": "Philippine Peso (PHP)",
+                "toBase": "x/58.889034",
+                "saveCase": true
+            },
+            "pkr": {
+                "name": "Pakistani Rupee (PKR)",
+                "toBase": "x/228.96751",
+                "saveCase": true
+            },
+            "pln": {
+                "name": "Polish Zloty (PLN)",
+                "toBase": "x/5.00501",
+                "saveCase": true
+            },
+            "pyg": {
+                "name": "Paraguayan Guarani (PYG)",
+                "toBase": "x/6942.46516",
+                "saveCase": true
+            },
+            "qar": {
+                "name": "Qatari Rial (QAR)",
+                "toBase": "x/3.640986",
+                "saveCase": true
+            },
+            "ron": {
+                "name": "Romanian Leu (RON)",
+                "toBase": "x/5.1056",
+                "saveCase": true
+            },
+            "rsd": {
+                "name": "Serbian Dinar (RSD)",
+                "toBase": "x/121.068433",
+                "saveCase": true
+            },
+            "rub": {
+                "name": "Russian Ruble (RUB)",
+                "toBase": "x/57.425024",
+                "saveCase": true
+            },
+            "rwf": {
+                "name": "Rwandan Franc (RWF)",
+                "toBase": "x/1045.750285",
+                "saveCase": true
+            },
+            "sar": {
+                "name": "Saudi Riyal (SAR)",
+                "toBase": "x/3.758406",
+                "saveCase": true
+            },
+            "sbd": {
+                "name": "Solomon Islands Dollar (SBD)",
+                "toBase": "x/8.143457",
+                "saveCase": true
+            },
+            "scr": {
+                "name": "Seychellois Rupee (SCR)",
+                "toBase": "x/12.896273",
+                "saveCase": true
+            },
+            "sdg": {
+                "name": "Sudanese Pound (SDG)",
+                "toBase": "x/577.439107",
+                "saveCase": true
+            },
+            "sek": {
+                "name": "Swedish Krona (SEK)",
+                "toBase": "x/11.304294",
+                "saveCase": true
+            },
+            "sgd": {
+                "name": "Singapore Dollar (SGD)",
+                "toBase": "x/1.438735",
+                "saveCase": true
+            },
+            "shp": {
+                "name": "Saint Helena Pound (SHP)",
+                "toBase": "x/1.377399",
+                "saveCase": true
+            },
+            "sll": {
+                "name": "Sierra Leonean Leone (SLL)",
+                "toBase": "x/15495.000268",
+                "saveCase": true
+            },
+            "sos": {
+                "name": "Somali Shilling (SOS)",
+                "toBase": "x/568.000235",
+                "saveCase": true
+            },
+            "srd": {
+                "name": "Surinamese Dollar (SRD)",
+                "toBase": "x/28.2765",
+                "saveCase": true
+            },
+            "std": {
+                "name": "São Tomé and Príncipe Dobra (STD)",
+                "toBase": "x/20697.981008",
+                "saveCase": true
+            },
+            "svc": {
+                "name": "Salvadoran Colón (SVC)",
+                "toBase": "x/8.644549",
+                "saveCase": true
+            },
+            "syp": {
+                "name": "Syrian Pound (SYP)",
+                "toBase": "x/2512.530318",
+                "saveCase": true
+            },
+            "szl": {
+                "name": "Swazi Lilangeni (SZL)",
+                "toBase": "x/17.828319",
+                "saveCase": true
+            },
+            "thb": {
+                "name": "Thai Baht (THB)",
+                "toBase": "x/38.069504",
+                "saveCase": true
+            },
+            "tjs": {
+                "name": "Tajikistani Somoni (TJS)",
+                "toBase": "x/9.709243",
+                "saveCase": true
+            },
+            "tmt": {
+                "name": "Turkmenistani Manat (TMT)",
+                "toBase": "x/3.51",
+                "saveCase": true
+            },
+            "tnd": {
+                "name": "Tunisian Dinar (TND)",
+                "toBase": "x/3.292501",
+                "saveCase": true
+            },
+            "top": {
+                "name": "Tongan Paʻanga (TOP)",
+                "toBase": "x/2.42295",
+                "saveCase": true
+            },
+            "try": {
+                "name": "Turkish Lira (TRY)",
+                "toBase": "x/18.540801",
+                "saveCase": true
+            },
+            "ttd": {
+                "name": "Trinidad and Tobago Dollar (TTD)",
+                "toBase": "x/6.706259",
+                "saveCase": true
+            },
+            "twd": {
+                "name": "New Taiwan Dollar (TWD)",
+                "toBase": "x/31.719502",
+                "saveCase": true
+            },
+            "tzs": {
+                "name": "Tanzanian Shilling (TZS)",
+                "toBase": "x/2331.999882",
+                "saveCase": true
+            },
+            "uah": {
+                "name": "Ukrainian Hryvnia (UAH)",
+                "toBase": "x/36.30978",
+                "saveCase": true
+            },
+            "ugx": {
+                "name": "Ugandan Shilling (UGX)",
+                "toBase": "x/3829.563279",
+                "saveCase": true
+            },
+            "usd": {
+                "name": "United States Dollar (USD)",
+                "toBase": "x/1",
+                "saveCase": true
+            },
+            "uyu": {
+                "name": "Uruguayan Peso (UYU)",
+                "toBase": "x/40.709088",
+                "saveCase": true
+            },
+            "uzs": {
+                "name": "Uzbekistan Som (UZS)",
+                "toBase": "x/10892.719674",
+                "saveCase": true
+            },
+            "vef": {
+                "name": "Venezuelan Bolívar Fuerte (VEF)",
+                "toBase": "x/undefined",
+                "saveCase": true
+            },
+            "vnd": {
+                "name": "Vietnamese Dong (VND)",
+                "toBase": "x/23860",
+                "saveCase": true
+            },
+            "vuv": {
+                "name": "Vanuatu Vatu (VUV)",
+                "toBase": "x/118.961877",
+                "saveCase": true
+            },
+            "wst": {
+                "name": "Samoan Tala (WST)",
+                "toBase": "x/2.725578",
+                "saveCase": true
+            },
+            "xaf": {
+                "name": "CFA Franc BEAC (XAF)",
+                "toBase": "x/676.896803",
+                "saveCase": true
+            },
+            "xag": {
+                "name": "Silver (troy ounce) (XAG)",
+                "toBase": "x/0.053588",
+                "saveCase": true
+            },
+            "xau": {
+                "name": "Gold (troy ounce) (XAU)",
+                "toBase": "x/0.000607",
+                "saveCase": true
+            },
+            "xcd": {
+                "name": "East Caribbean Dollar (XCD)",
+                "toBase": "x/2.702551",
+                "saveCase": true
+            },
+            "xdr": {
+                "name": "Special Drawing Rights (XDR)",
+                "toBase": "x/0.776843",
+                "saveCase": true
+            },
+            "xof": {
+                "name": "CFA Franc BCEAO (XOF)",
+                "toBase": "x/676.896803",
+                "saveCase": true
+            },
+            "xpf": {
+                "name": "CFP Franc (XPF)",
+                "toBase": "x/123.697862",
+                "saveCase": true
+            },
+            "yer": {
+                "name": "Yemeni Rial (YER)",
+                "toBase": "x/250.249664",
+                "saveCase": true
+            },
+            "zar": {
+                "name": "South African Rand (ZAR)",
+                "toBase": "x/17.914502",
+                "saveCase": true
+            },
+            "zmk": {
+                "name": "Zambian Kwacha (pre-2013) (ZMK)",
+                "toBase": "x/9001.200249",
+                "saveCase": true
+            },
+            "zmw": {
+                "name": "Zambian Kwacha (ZMW)",
+                "toBase": "x/15.561277",
+                "saveCase": true
+            },
+            "zwl": {
+                "name": "Zimbabwean Dollar (ZWL)",
+                "toBase": "x/321.999592",
+                "saveCase": true
+            }
+        }
+    },
+    "time": {
+        "name": "Time",
+        "units": {
+            "ns": {
+                "name": "Nanoseconds",
+                "toBase": "mis/1000"
+            },
+            "mis": {
+                "name": "Microseconds",
+                "toBase": "ms/1000"
+            },
+            "ms": {
+                "name": "Milliseconds",
+                "toBase": "x/1000"
+            },
+            "s": {
+                "name": "Seconds",
+                "toBase": "x"
+            },
+            "m": {
+                "name": "Minutes",
+                "toBase": "x*60"
+            },
+            "h": {
+                "name": "Hours",
+                "toBase": "m*60"
+            },
+            "d": {
+                "name": "Days",
+                "toBase": "h*24"
+            },
+            "y": {
+                "name": "Years",
+                "toBase": "d*365.2422"
+            },
+            "dec": {
+                "name": "Decades",
+                "toBase": "y*10"
+            },
+            "c": {
+                "name": "Centuries",
+                "toBase": "y*100"
+            },
+            "mil": {
+                "name": "Millenniums",
+                "toBase": "y*1000"
+            }
+        }
+    },
+    "temperature": {
+        "name": "Temperature",
+        "units": {
+            "c": {
+                "name": "Degrees Celcius",
+                "toBase": "x",
+                "saveCase": true
+            },
+            "f": {
+                "name": "Degrees Fahrenheit",
+                "toBase": "(x-32)*(5/9)",
+                "fromBase": "(x*(9/5))+32",
+                "saveCase": true
+            },
+            "k": {
+                "name": "Kelvin",
+                "toBase": "x-273.15",
+                "fromBase": "x+273.15",
+                "saveCase": true
+            }
+        }
+    },
+    "storage": {
+        "name": "Digital Storage",
+        "units": {
+            "b": {
+                "name": "Bytes",
+                "toBase": "x"
+            },
+            "kb": {
+                "name": "Kilobytes",
+                "toBase": "x*1000"
+            },
+            "kib": {
+                "name": "Kibibytes",
+                "toBase": "x*1024"
+            },
+            "mb": {
+                "name": "Megabytes",
+                "toBase": "x*(1000^2)"
+            },
+            "mib": {
+                "name": "Mebibytes",
+                "toBase": "x*(1024^2)"
+            },
+            "gb": {
+                "name": "Gigabytes",
+                "toBase": "x*(1000^3)"
+            },
+            "gib": {
+                "name": "Gibibytes",
+                "toBase": "x*(1024^3)"
+            },
+            "tb": {
+                "name": "Terabytes",
+                "toBase": "x*(1000^4)"
+            },
+            "tib": {
+                "name": "Tebibytes",
+                "toBase": "x*(1024^4)"
+            },
+            "pb": {
+                "name": "Petabytes",
+                "toBase": "x*(1000^5)"
+            },
+            "pib": {
+                "name": "Pebibytes",
+                "toBase": "x*(1024^5)"
+            },
+            "eb": {
+                "name": "Exabytes",
+                "toBase": "x*(1000^6)"
+            },
+            "eib": {
+                "name": "Ebibytes",
+                "toBase": "x*(1024^6)"
+            },
+            "zb": {
+                "name": "Zettabytes",
+                "toBase": "x*(1000^7)"
+            },
+            "zib": {
+                "name": "Zebibytes",
+                "toBase": "x*(1024^7)"
+            },
+            "yb": {
+                "name": "Yottabytes",
+                "toBase": "x*(1000^8)"
+            },
+            "yib": {
+                "name": "Yobibytes",
+                "toBase": "x*(1024^8)"
+            }
+        }
+    },
+    "transfer": {
+        "name": "Data transfer",
+        "units": {
+            "bit": {
+                "name": "Bits",
+                "toBase": "b/8"
+            },
+            "kbit": {
+                "name": "Kilobits",
+                "toBase": "kib/8"
+            },
+            "kibit": {
+                "name": "Kibibits",
+                "toBase": "kib/8"
+            },
+            "mbit": {
+                "name": "Megabits",
+                "toBase": "mb/8"
+            },
+            "mibit": {
+                "name": "Mebibits",
+                "toBase": "mib/8"
+            },
+            "gbit": {
+                "name": "Gigabits",
+                "toBase": "gb/8"
+            },
+            "gibit": {
+                "name": "Gibibits",
+                "toBase": "gib/8"
+            },
+            "tbit": {
+                "name": "Terabits",
+                "toBase": "tb/8"
+            },
+            "tibit": {
+                "name": "Tebibits",
+                "toBase": "tib/8"
+            },
+            "pbit": {
+                "name": "Petabits",
+                "toBase": "pb/8"
+            },
+            "pibit": {
+                "name": "Pebibits",
+                "toBase": "pib/8"
+            },
+            "ebit": {
+                "name": "Exabits",
+                "toBase": "eb/8"
+            },
+            "eibit": {
+                "name": "Ebibits",
+                "toBase": "eib/8"
+            },
+            "zbit": {
+                "name": "Zettabits",
+                "toBase": "zb/8"
+            },
+            "zibit": {
+                "name": "Zebibits",
+                "toBase": "zib/8"
+            },
+            "ybit": {
+                "name": "Yottabits",
+                "toBase": "yb/8"
+            },
+            "yibit": {
+                "name": "Yobibits",
+                "toBase": "yib/8"
+            }
+        }
+    }
+}

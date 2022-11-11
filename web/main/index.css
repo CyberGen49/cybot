@@ -1,0 +1,74 @@
+
+#main {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+#top {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background: var(--b20);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+}
+#top h1 {
+    font-size: 42px;
+    color: var(--f80);
+}
+#top .materialSymbol {
+    height: 24px;
+    font-size: 36px;
+    color: var(--f90);
+    animation: scroll-icon 1.5s infinite;
+    animation-timing-function: var(--bezier);
+    transform: translateY(0px);
+}
+
+@keyframes scroll-icon {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    90% {
+        transform: translateY(15px);
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#logo {
+    --w: 128px;
+    width: var(--w);
+    height: var(--w);
+    border-radius: 50%;
+    box-shadow: 0px 8px 16px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 470px) {
+    #topCont {
+        flex-direction: column;
+    }
+    #headerCont {
+        text-align: center;
+    }
+    #inviteBtnCont {
+        justify-content: center;
+    }
+}
+
+#bottom {
+    padding: 30px 20px;
+    margin: auto;
+    max-width: 1000px;
+}
+
+.spoiler .head h4 {
+    margin: 0px;
+    color: var(--f80)
+}

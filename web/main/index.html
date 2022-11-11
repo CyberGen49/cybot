@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybot</title>
+    <link rel="icon" href="icon-circle.png">
+    <meta name="theme-color" content="#f2e6a6">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Cybot">
+    <meta property="og:title" content="Cybot">
+    <meta property="og:description" content="A Discord bot that adds a whole bunch of slash commands to make your life easier!">
+    <meta name="description" content="A Discord bot that adds a whole bunch of slash commands to make your life easier!">
+    <link rel="stylesheet" href="https://src.simplecyber.org/base.css">
+    <link rel="stylesheet" href="index.css">
+    <script defer src="https://src.simplecyber.org/base.js"></script>
+    <script defer src="index.js"></script>
+</head>
+<body class="changeColours" style="--fgHue: 50">
+    <div id="main">
+        <div id="top" class="col">
+            <div class="row align-center justify-center flex-grow">
+                <div id="topCont" class="row align-center justify-center no-wrap" style="gap: 30px">
+                    <img id="logo" src="icon.png">
+                    <div class="col">
+                        <div id="headerCont" class="col gap-0">
+                            <h1 class="no-margin">Cybot</h1>
+                        </div>
+                        <div id="inviteBtnCont" class="row">
+                            <a class="btn" target="_blank" href="/invite">
+                                <div class="icon">add</div>
+                                Invite to server...
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col gap-0 align-center">
+                <div class="row justify-center">
+                    <h6 class="text-center">Scroll down for details and commands!</h6>
+                </div>
+                <div class="row justify-center">
+                    <div class="materialSymbol">keyboard_arrow_down</div>
+                </div>
+            </div>
+        </div>
+        <div id="bottom">
+            <h2>Command list</h2>
+            <p>Click a command to view its options. If you're looking for something specific, search for it using your browser's Find function (typically <code>Ctrl + F</code>).</p>
+            <p>Cybot has <span id="commandCount">0</span> commands so far, but some of them are subcommands.</p>
+            <div id="commands" class="col gap-10"></div>
+
+            <h2>Reporting issues</h2>
+            <p>If you happen upon any bugs or other issues, feel free to message <b>Cyber#1000</b> with the details. You can direct any other questions there as well.</p>
+
+            <p class="text-center" style="margin-top: 20px">
+                Cybot is &copy; CyberGen49 2022
+                <br><a href="https://simplecyber.org">SimpleCyber.org</a> • <a href="/privacy">Privacy Policy</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
