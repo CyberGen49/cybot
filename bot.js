@@ -85,7 +85,7 @@ async function main() {
     ];
     const bot = await initializeBot({ intents: intents }, config.token, (me) => {
         me.user.setActivity(`for your commands`, {
-            type: Discord.ActivityType.Watching
+            type: Discord.ActivityType.Listening
         });
         startTime = Date.now();
     });
@@ -103,9 +103,9 @@ async function main() {
         help: {
             builder: new Discord.SlashCommandBuilder()
                 .setName('help')
-                .setDescription(`Get a link to the Cybot website where you can view all commands.`),
+                .setDescription(`Get more info about Cybot, including a full list of commands and options.`),
             handler: req => {
-                req.reply({ content: 'Want to see a complete list of commands and their options? Check out [the Cybot website](https://cybot.simplecyber.org).', ephemeral: true });
+                req.reply({ content: `Check out [the Cybot website](<https://${config.web_domain}>) for a complete list of commands and options, and read [Cybot's privacy policy](<https://${config.web_domain}/privacy>) for more info on how we use your data.`, ephemeral: true });
             }
         },
         naenae: {

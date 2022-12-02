@@ -2,21 +2,23 @@
 # Cybot Privacy Policy
 This document seeks to detail, as transparently as possible, how the Cybot Discord bot processes user information. A markdown ([?](https://en.wikipedia.org/wiki/Markdown)) version of this document can be downloaded [here](./privacy.md).
 
+Last revised on **November 11th, 2021**
+
 ## Persistent storage of user data
 Most slash commands provided by Cybot make use of user-inputted information, but only some of these commands save this data for future use.
 
 ### Link shortener
-The **/shortlink** command and its subcommands allow the user to create short links redirecting to URLs that they provide, optionally with a custom link ending. When a user creates a short link, a database entry is created with the following values:
+The **/shortlink** command and its subcommands allow the user to create short links redirecting to URLs that they provide, optionally with a custom link ending. When a user creates a short link, a database entry is created with the following properties:
 
 * The user's Discord ID (snowflake)
 * The timestamp of creation
 * The URL
 * The short link ending that will redirect visitors to the target URL
-* A value that will increment every time the short link is clicked
 * The title of the target webpage, if a title exists
+* A value tracking the number of clicks this link has received
 * A value determining whether or not the short link is disabled (described below)
 
-For security purposes, a short link can neither be edited nor deleted after creation. If the user wishes to prevent access to a short link, they can use the **/shortlink disable** command to disable it. Disabled short links won't allow visitors to access the link's target URL, and will instead notify them that the link has been disabled.
+For security purposes, a short link can neither be edited nor deleted after creation. If the user wishes to prevent access to one of their short links, they can use the **/shortlink disable** command to disable it. Disabled short links won't allow visitors to access the link's target URL, and will instead notify them that the link has been disabled.
 
 ### Website screenshot creator
 The **/screenshot** command allows the user to get a screenshot of any website by providing a URL, along with optional image width and height attributes. Captured screenshots that are **over 8 megabytes in size** are saved to the server and made available under this website's `/content` endpoint so the user can download them.
