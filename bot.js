@@ -13,7 +13,7 @@ const puppeteer = require('puppeteer');
 const parseHtml = require('node-html-parser');
 const ytdl = require('ytdl-core');
 const { randomInt, randomHex, roundSmart, isValidIp, isValidHostname, isValidUrl, overflow, getRandomElement, getRandomWeighted, formatSeconds } = require('web-resources');
-const { buildCommands, initializeBot, buttonClick, modalSubmit, getBtnId, selectMenuSelect } = require('../discord-helper');
+const { buildCommands, initializeBot, buttonClick, modalSubmit, getBtnId, selectMenuSelect } = require('./discordHelper.js');
 const logger = require('cyber-express-logger');
 
 const writeJson = (file, object) => fs.writeFileSync(file, JSON.stringify(object, null, 4));
