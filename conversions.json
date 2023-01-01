@@ -53,11 +53,11 @@
             },
             "kilometers": {
                 "name": "Kilometers",
-                "toBase": "x*1000"
+                "toBase": "meters*1000"
             },
             "inches": {
                 "name": "Inches",
-                "toBase": "x*2.54"
+                "toBase": "x*2.53999863"
             },
             "feet": {
                 "name": "Feet",
