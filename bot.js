@@ -85,7 +85,7 @@ async function main() {
     ];
     const bot = await initializeBot({ intents: intents }, config.token, (me) => {
         me.user.setActivity(`for your commands`, {
-            type: Discord.ActivityType.Listening
+            type: Discord.ActivityType.Watching
         });
         startTime = Date.now();
     });
