@@ -12,6 +12,8 @@ const sqlite3 = require('better-sqlite3');
 const puppeteer = require('puppeteer');
 const parseHtml = require('node-html-parser');
 const ytdl = require('ytdl-core');
+const ReadText = require('text-from-image');
+const Downloader = require("nodejs-file-downloader");
 const { randomInt, randomHex, roundSmart, isValidIp, isValidHostname, isValidUrl, overflow, getRandomElement, getRandomWeighted, formatSeconds } = require('web-resources');
 const { buildCommands, initializeBot, buttonClick, modalSubmit, getBtnId, selectMenuSelect } = require('./discordHelper.js');
 const logger = require('cyber-express-logger');
@@ -1520,12 +1522,16 @@ async function main() {
                     .setName(`height`)
                     .setDescription(`The browser window's height [720]`)
                     .setMinValue(32)
-                    .setMaxValue(2048)),
+                    .setMaxValue(2048))
+                .addStringOption(opt => opt
+                    .setName(`selector`)
+                    .setDescription(`An element selector to capture`)),
             handler: async req => {
                 await req.deferReply();
                 const url = req.options.getString('url');
                 const width = req.options.getNumber('width') || 1280;
                 const height = req.options.getNumber('height') || 720;
+                const selector = req.options.getString('selector');
                 if (!isValidUrl(url)) {
                     return req.editReply({
                         content: `That URL is invalid!`,
@@ -1543,11 +1549,30 @@ async function main() {
                 console.log(`Starting puppeteer for website screenshot...`);
                 const browser = await puppeteer.launch();
                 const page = await browser.newPage();
+                await page.emulateMediaFeatures([{ name: 'prefers-color-scheme', value: 'dark' }]);
                 await page.setViewport({ width: width, height: height });
+                let el;
                 try {
                     console.log(`Navigating to ${url}...`);
                     await page.goto(url);
                     await page.waitForNetworkIdle({ timeout: 10000 });
+                    if (selector) {
+                        console.log(`Selecting selector...`);
+                        await page.waitForSelector(selector, { timeout: 10000 });
+                        el = await page.$(selector);
+                        if (el) {
+                            const rect = await page.evaluate(selector => {
+                                const el = document.querySelector(selector);
+                                return el.getBoundingClientRect();
+                            }, selector);
+                            if (rect.width > 2048 || rect.height > 2048) {
+                                return req.editReply({
+                                    content: `The element you selected is too big!`,
+                                    ephemeral: true
+                                });
+                            }
+                        }
+                    }
                 } catch (error) {
                     isUserScreenshotting[req.user.id] = false;
                     return req.editReply({
@@ -1557,10 +1582,9 @@ async function main() {
                 }
                 console.log(`Capturing screenshot...`);
                 const imageName = `${urlParsed.host}_${Date.now()}.png`;
-                await page.screenshot({
+                await (el || page).screenshot({
                     path: imageName,
-                    type: 'png',
-                    omitBackground: true
+                    type: 'png'
                 });
                 await page.close();
                 await browser.close();
@@ -1822,6 +1846,30 @@ async function main() {
                     ],
                     ephemeral: true
                 });
+            }
+        },
+        tiklink: {
+            builder: new Discord.SlashCommandBuilder()
+                .setName('tiklink')
+                .setDescription(`Send a playable video embed given a TikTik link.`)
+                .addStringOption(opt => opt
+                    .setName('link')
+                    .setDescription(`Your vm.tiktok.com link`)),
+            handler: async(req) => {
+                const link = req.options.getString('link');
+                let matches = link.match(/^https:\/\/vm.tiktok.com\/(.*?)(\/|$)/);
+                if (!matches)
+                    matches = link.match(/^https:\/\/www.tiktok.com\/t\/(.*?)(\/|$)/);
+                if (matches) {
+                    req.reply({
+                        content: `https://vm.dstn.to/${matches[1]}`
+                    });
+                } else {
+                    req.reply({
+                        ephemeral: true,
+                        content: `Invalid TikTok link! Make sure it's in the format of \`https://vm.tiktok.com/...\`or \`https://www.tiktok.com/t/...\`.`
+                    });
+                }
             }
         },
         stats: {

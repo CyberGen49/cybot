@@ -27,7 +27,9 @@
     "mathjs": "^11.5.0",
     "node-fetch": "^2.6.7",
     "node-html-parser": "^6.1.4",
+    "nodejs-file-downloader": "^4.11.2",
     "puppeteer": "^19.4.1",
+    "text-from-image": "^1.1.1",
     "title-case": "^3.0.3",
     "web-resources": "^1.8.2",
     "ytdl-core": "^4.11.2"
