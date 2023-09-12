@@ -1525,13 +1525,17 @@ async function main() {
                     .setMaxValue(2048))
                 .addStringOption(opt => opt
                     .setName(`selector`)
-                    .setDescription(`An element selector to capture`)),
+                    .setDescription(`An element selector to capture`))
+                .addBooleanOption(opt => opt
+                    .setName(`transparent`)
+                    .setDescription(`Attempt to remove the background of the site`)),
             handler: async req => {
                 await req.deferReply();
                 const url = req.options.getString('url');
                 const width = req.options.getNumber('width') || 1280;
                 const height = req.options.getNumber('height') || 720;
                 const selector = req.options.getString('selector');
+                const isTransparent = req.options.getBoolean('transparent');
                 if (!isValidUrl(url)) {
                     return req.editReply({
                         content: `That URL is invalid!`,
@@ -1584,7 +1588,8 @@ async function main() {
                 const imageName = `${urlParsed.host}_${Date.now()}.png`;
                 await (el || page).screenshot({
                     path: imageName,
-                    type: 'png'
+                    type: 'png',
+                    omitBackground: isTransparent
                 });
                 await page.close();
                 await browser.close();
