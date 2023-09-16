@@ -1856,18 +1856,21 @@ async function main() {
         tiklink: {
             builder: new Discord.SlashCommandBuilder()
                 .setName('tiklink')
-                .setDescription(`Send a playable video embed given a TikTik link.`)
+                .setDescription(`Send a playable video embed given a TikTok link.`)
                 .addStringOption(opt => opt
                     .setName('link')
-                    .setDescription(`Your vm.tiktok.com link`)),
+                    .setDescription(`A shared TikTok video link`)
+                    .setRequired(true)),
             handler: async(req) => {
                 const link = req.options.getString('link');
                 let matches = link.match(/^https:\/\/vm.tiktok.com\/(.*?)(\/|$)/);
                 if (!matches)
                     matches = link.match(/^https:\/\/www.tiktok.com\/t\/(.*?)(\/|$)/);
                 if (matches) {
-                    req.reply({
-                        content: `https://vm.dstn.to/${matches[1]}`
+                    await req.deferReply();
+                    const meta = await (await fetch(`https://tiktok.simplecyber.org/v/${matches[1]}/json`)).json();
+                    req.editReply({
+                        content: `[Video from ${meta.data.author.name} on TikTok](https://tiktok.simplecyber.org/v/${matches[1]})`
                     });
                 } else {
                     req.reply({
