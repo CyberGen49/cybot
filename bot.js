@@ -1870,7 +1870,7 @@ async function main() {
                     await req.deferReply();
                     const meta = await (await fetch(`https://tiktok.simplecyber.org/v/${matches[1]}/json`)).json();
                     req.editReply({
-                        content: `[Video from ${meta.data.author.name} on TikTok](https://tiktok.simplecyber.org/v/${matches[1]})`
+                        content: `[Video from ${meta.data?.author?.name || '[unknown]'} on TikTok](https://tiktok.simplecyber.org/v/${matches[1]})`
                     });
                 } else {
                     req.reply({
@@ -1878,6 +1878,18 @@ async function main() {
                         content: `Invalid TikTok link! Make sure it's in the format of \`https://vm.tiktok.com/...\`or \`https://www.tiktok.com/t/...\`.`
                     });
                 }
+            }
+        },
+        riklink: {
+            builder: new Discord.SlashCommandBuilder()
+                .setName('riklink')
+                .setDescription(`Send a playable video embed given a TikTok link.`)
+                .addStringOption(opt => opt
+                    .setName('link')
+                    .setDescription(`A shared TikTok video link`)
+                    .setRequired(true)),
+            handler: async(req) => {
+                commands.tiklink.handler(req);
             }
         },
         stats: {
